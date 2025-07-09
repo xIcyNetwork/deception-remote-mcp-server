@@ -1,0 +1,26 @@
+{
+	"name": "deception-remote-mcp-server",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"format": "biome format --write",
+		"lint:fix": "biome lint --fix",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"typescript": "^5.8.3",
+		"wrangler": "^4.16.0"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.13.1",
+		"agents": "^0.0.100",
+		"event-source-polyfill": "^1.0.31",
+		"node-fetch": "^2.7.0",
+		"zod": "^3.25.76"
+	}
+}
